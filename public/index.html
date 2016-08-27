@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+    <title>Poursafe</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+    <!-- endbower -->
+    <!-- styles for ng-typeahead -->
+    <link rel="stylesheet" href="app/styles/ng-typeahead.css" />
+
+    <!-- api for google places w/key-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-nVLaBK68AC-uUM0MC5-VhpjU4QfBfS0&libraries=places"></script>
+
+    <!-- added ajax call for google places -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!-- included script for ngautocomplete for google places -->
+    <script src="app/ngAutoComplete/ngAutocomplete.js"></script>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/styles/ng-typeahead.css">
+    <link rel="stylesheet" href="/app/styles/styles.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" ui-sref="home">Input Form</a>
+                </li>
+                <li>
+                    <a href="#" ui-sref="search">Search Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- adding ui view directive to my body for the two states -->
+    <div ui-view></div>
+    <!-- /input-group -->
+    <!-- bower:js -->
+    <!-- <script src="bower_components/angular/angular.js"></script> -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/toastr/toastr.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/main.controller.js"></script>
+    <script src="/app/main.factory.js"></script>
+    <script src="/app/ngAutoComplete/ngAutocomplete.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>
