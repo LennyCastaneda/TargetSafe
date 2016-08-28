@@ -16,6 +16,7 @@ CREATE TABLE poursafe.arrest
 	other_crime_codes_id int,
 	arrest_address character(100),
 	offender_destination_address character(100),
+	out_of_county boolean DEFAULT false,
 	location_type_id integer NOT NULL,
 	number_of_drinks integer,
 	rate_of_consumption integer, 
