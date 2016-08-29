@@ -33,6 +33,8 @@ app.use(bodyParser.json());
 var router = express.Router();
 
 
+
+
 //ROUTES ADDED TO EXPRESS AT RUNTIME FOR TESTING
 //GET all from Arrest
 router.get('/records', function(req, res, next) {
