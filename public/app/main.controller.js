@@ -82,6 +82,7 @@
             MainFactory.addEntry(newEntry)
                 .then(function(response) {
                         response;
+                        toastr.success('Information SAVED to Database!');
                     },
                     //added toastr for error handling
                     function(error) {
