@@ -27,7 +27,8 @@
             stop_type: stop_type,
             vehicle_type: vehicle_type,
             police_dept_id: police_dept_id,
-            ca_license_id: ca_license_id
+            ca_license_id: ca_license_id,
+            prior_dui_history: prior_dui_history
         };
         return service;
 
@@ -194,6 +195,25 @@
                 });
              return defer.promise;
         }
+
+    function prior_dui_history(){
+            var defer = $q.defer();
+             $http({
+                method: "GET",
+                url: urlLookup + 'prior_dui_history'
+            }).then(function(response) {
+                    if (typeof response === 'object') {
+                        defer.resolve(response);
+                    } else {
+                        defer.reject("No data found!");
+                    }
+                },
+            function(error) {
+                    defer.reject(error);
+                });
+             return defer.promise;
+        }
+
 
         function other_substances(){
             var defer = $q.defer();

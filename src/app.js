@@ -17,7 +17,13 @@ var pgp = require('pg-promise')();
 
 //created an object for connection
 //  INSERT DATABASE INFORMATION HERE
-
+var connectionToPoursafeDB = {
+    host: 'ftp.targetsafe.com',
+    port: 5432,
+    database: 'poursafe_db_clone',
+    user: 'poursafe_tsdev51',
+    password: 'Xe#h8@qcXe#h8@qc'
+};
 
 //creating global var of connectionToPoursafeDB
 var db = pgp(connectionToPoursafeDB);
@@ -269,6 +275,22 @@ router.get('/lookup/police_dept_id', function(req, res, next) {
               status: 'success',
               data: data,
               message: 'Retrieved All police_dept_id information!'
+          });
+      })
+      .catch(function (err) {
+          return next(err);
+      });
+})
+
+//get info from prior dui history table
+router.get('/lookup/prior_dui_history', function(req, res, next) {
+  db.any('SELECT prior_dui_history_id, prior_dui_history_number from lookups.prior_dui_history')
+    .then(function (data) {
+          res.status(200)
+          .json({
+              status: 'success',
+              data: data,
+              message: 'Retrieved All charge information!'
           });
       })
       .catch(function (err) {
