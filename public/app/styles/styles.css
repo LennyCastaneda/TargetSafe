@@ -8,4 +8,61 @@ label {
 
 #button1 {
 	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 40px;
+
+}
+#insidebutton {
+	margin: 20px;
+	size: 20px;
+}
+
+img {
+	padding-top: 30px;
+	margin-left: 600px;
+
+
+
+}
+
+.navbar-static-top {
+    height: 130px; /* Whatever you want. */
+    background-color: #1e90ff;
+
+}
+
+
+.menu
+{
+background-color: #1e90ff;
+border-bottom: 8px solid #00547E;
+width:100%;
+height: auto;
+padding: 0 60px;
+position: fixed;
+margin: 0px;
+z-index: 10;
+opacity: 0.9;
+}
+
+.menu  .navbar-nav > .active > a
+{
+background-color : #00547E;
+color: white;
+font-weight: bold;
+}
+
+.menu  .navbar-nav >  li >  a
+{
+font-size: 20px;
+color: white;
+padding: 50px 45px;
+margin-top: 4px;
+
+}
+.menu  .navbar-nav >  li >  a:hover
+{
+background-color: #66cdaa;
+
+
 }
