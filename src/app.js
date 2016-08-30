@@ -18,7 +18,6 @@ var pgp = require('pg-promise')();
 //created an object for connection
 //  INSERT DATABASE INFORMATION HERE
 
-
 //creating global var of connectionToPoursafeDB
 var db = pgp(connectionToPoursafeDB);
 
