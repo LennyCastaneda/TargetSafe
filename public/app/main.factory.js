@@ -291,22 +291,19 @@
         function addEntry(newEntry) {
             //converting time from UTC to local time
             var newTime = newEntry.arrest_time.toLocaleTimeString('en-US');
+
             //merging old UTC to newTime ()
-            var updatedTime = {arrest_time: newTime}
-            //console.log(updatedTime);
+            var updatedTime = {arrest_time: newTime};
+
             //destination for update object
             var updateNewEntry ={};
 
-            console.log(angular.merge(updateNewEntry, newEntry, updatedTime));
-            console.log("update: " + updateNewEntry);
+            //using angular merge to insert new time into old newEntry
+            angular.merge(updateNewEntry, newEntry, updatedTime);
 
-
-
-
-
-
-
+            //converting updatedNewEntry into a Json
             var data  = angular.toJson(updateNewEntry, true);
+            
             console.log(data);
             var defer = $q.defer();
             $http({
