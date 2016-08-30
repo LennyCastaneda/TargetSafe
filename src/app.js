@@ -17,7 +17,13 @@ var pgp = require('pg-promise')();
 
 //created an object for connection
 //  INSERT DATABASE INFORMATION HERE
-
+var connectionToPoursafeDB = {
+   host: 'ftp.targetsafe.com',
+   port: 5432,
+   database: 'poursafe_db_clone',
+   user: 'poursafe_tsdev51',
+   password: 'Xe#h8@qcXe#h8@qc'
+};
 
 //creating global var of connectionToPoursafeDB
 var db = pgp(connectionToPoursafeDB);
