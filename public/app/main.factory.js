@@ -196,7 +196,7 @@
              return defer.promise;
         }
 
-    function prior_dui_history(){
+        function prior_dui_history(){
             var defer = $q.defer();
              $http({
                 method: "GET",
