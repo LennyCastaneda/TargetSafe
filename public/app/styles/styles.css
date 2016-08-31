@@ -17,9 +17,11 @@ label {
 	size: 20px;
 }
 
+
 .theTitle {
+	
 	padding-top: 30px;
-	margin-left: 800px;
+	text-align: center;
 	font-family: Arial;
 	color: white;
 	font-size: 40px;
@@ -35,46 +37,11 @@ label {
     color: orange;
 }
 
-.navbar-static-top {
-    height: 90px; /* Whatever you want. */
-    background-color: #1e90ff;
-
-}
-
-
-.menu
-{
-background-color: #1e90ff;
-border-bottom: 4px solid #00547E;
-width:100%;
-height: auto;
-padding: 0 60px;
-margin: 0px;
-}
-
-.menu  .navbar-nav > .active > a
-{
-background-color : #00547E;
-color: white;
-font-weight: bold;
-}
-
-.menu  .navbar-nav >  li >  a
-{
-font-size: 20px;
-color: black;
-padding: 35px 30px;
-margin-top: 2px;
-
-
-}
-
-
-.menu  .navbar-nav >  li >  a:hover
-{
-
-background-color: #66cdaa
 
 
 
-}
+
+
+
+
+
